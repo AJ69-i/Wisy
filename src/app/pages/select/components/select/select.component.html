@@ -1,0 +1,3 @@
+<ng-select placeholder="select" (change)="selectDistrict($event)">
+  <ng-option *ngFor="let district of districtsOptions; trackBy: trackByFn;" [value]="district.forecast_office">{{district.name}}</ng-option>
+</ng-select>

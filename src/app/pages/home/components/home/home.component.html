@@ -1,0 +1,11 @@
+<div class="container d-lg-flex d-md-flex flex-column align-items-center">
+  <div class="col-lg-4 col-md-8 col-sm-12 mt-5 mb-5">
+    <app-select [districtsOptions]="districtsOptions" (district)="selectDistrict($event)"></app-select>
+  </div>
+
+  <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+    <app-chart [periods]="periods"></app-chart>
+  </div>
+</div>
+
+<app-loader></app-loader>
